@@ -38,7 +38,6 @@ public class Config {
         builder.push("Targets");
         AE2_COORDS = builder.defineList("ae2_coords", List.of("0,64,0,minecraft:overworld"), o -> o instanceof String);
         
-        // NOUVEAU : Filtre des items AE2
         AE2_TRACKED_ITEMS = builder.defineList("ae2_tracked_items", List.of("minecraft:iron_ingot", "minecraft:diamond"), o -> o instanceof String);
         
         NBT_BLOCKS = builder.defineList("nbt_blocks", List.of(), o -> o instanceof String);

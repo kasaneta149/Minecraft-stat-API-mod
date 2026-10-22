@@ -47,7 +47,6 @@ public class AE2Helper {
                 AEKey key = entry.getKey();
                 ResourceLocation id = key.getId();
                 
-                // Si le filtre est actif et que l'ID n'est pas dedans, on passe au suivant
                 if (hasFilter && !trackedItems.contains(id.toString())) {
                     continue;
                 }
