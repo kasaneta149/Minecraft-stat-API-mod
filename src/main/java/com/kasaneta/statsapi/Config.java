@@ -25,7 +25,7 @@ public class Config {
 
         builder.push("Server");
         PORT = builder.defineInRange("port", 11700, 1024, 65535);
-        UPDATE_RATE = builder.defineInRange("update_rate_ticks", 80, 1, 1200);
+        UPDATE_RATE = builder.defineInRange("update_rate_ticks", 200, 1, 1200);
         builder.pop();
 
         builder.push("Modules");
