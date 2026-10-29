@@ -22,8 +22,8 @@ public class FakeSocialHelper {
     private static void init() {
         if (initialized) return;
         try {
-            managerClass = Class.forName("com.kimiga149.fakesocialsimulator.SocialManager");
-            statsClass = Class.forName("com.kimiga149.fakesocialsimulator.PlayerStats");
+            managerClass = Class.forName("com.kasaneta.fakesocialsimulator.SocialManager");
+            statsClass = Class.forName("com.kasaneta.fakesocialsimulator.PlayerStats");
             getManagerMethod = managerClass.getMethod("get", MinecraftServer.class);
             getStatsMethod = managerClass.getMethod("getStats", UUID.class);
             getFollowersMethod = statsClass.getMethod("getFollowersCount");
